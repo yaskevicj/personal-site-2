@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Page</title>
+  <style>
+    /* Загальні стилі */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    h1, p {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    /* Секція для контенту */
+    .content {
+      padding: 20px;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+
+    /* Parallax section */
+    .parallax {
+      /* Зображення для фону */
+      background-image: url('goru2.jpg'); /* Заміни на своє зображення */
+      min-height: 500px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Відключення parallax для планшетів і мобільних телефонів */
+    @media (max-width: 768px) {
+      .parallax {
+        background-attachment: scroll;
+      }
+    }
+
+    /* Стилі для решти контенту */
+    .content p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Контент перед parallax -->
+  <div class="content">
+    <h1>Welcome to Parallax Page</h1>
+    <p>Scroll down to see the parallax effect in action.</p>
+  </div>
+
+  <!-- Parallax Section -->
+  <div class="parallax"></div>
+
+  <!-- Контент після parallax -->
+  <div class="content">
+    <h2>More Content</h2>
+    <p>Here is some more content that appears after the parallax effect.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2024 Персональна сторінка Олександра.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flex Page</title>
+  <style>
+    /* Internal CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: royalblue;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Header section */
+    header {
+      background-image: url("lito.png"); /* Placeholder for the header image */
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header button {
+      padding: 10px 20px;
+      background-color: lightgreen;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    /* Main Content */
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .content p {
+      margin-bottom: 40px;
+    }
+
+    /* Section with Flexbox for images */
+    .flex-section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .flex-item {
+      width: 48%;
+      background-color: lightgray;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .flex-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Footer */
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .flex-item {
+        width: 100%;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header button {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    Travel Portal
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <div>
+      <h1>WE ARE EUROPE</h1>
+      <button>Explore More</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h2>Experience Europe through our stories</h2>
+    <p>Discover the sights and sounds of Europe as you journey through the continent's most beautiful destinations.</p>
+
+    <!-- Flexbox Section -->
+    <div class="flex-section">
+      <div class="flex-item">
+        <img src="lis.jpg" alt="About Europe">
+        <h3>ABOUT</h3>
+        <p>Learn more about the history and culture of Europe.</p>
+      </div>
+      <div class="flex-item">
+        <img src="mox.jpg" alt="Take Action">
+        <h3>TAKE ACTION</h3>
+        <p>Join us in preserving and enjoying Europe's rich heritage.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    © 2024 Europe Travel. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
